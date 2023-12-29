@@ -25,7 +25,7 @@ BaselineOfXMLParser >> baseline: spec [
 						#( 'OrderPreservingDictionary' 'BitmapCharacterSet' ) ];
 			package: 'XML-Parser-Tests' with: [
 				spec requires: #( 'XML-Parser' 'BitmapCharacterSet' 'OrderPreservingDictionary' 'OrderPreservingDictionary Tests'
-						   'BitmapCharacterSet Tests' ) ];
+						   'BitmapCharacterSet Tests' 'XMLWriter Tests' ) ];
 			package: 'XML-Parser-Tests-Conformance' with: [
 				spec requires:
 						#( 'XML-Parser' 'XMLWriter Tests' 'XML-Parser-Tests' ) ];
