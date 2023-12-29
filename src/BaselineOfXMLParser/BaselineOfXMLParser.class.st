@@ -2,12 +2,13 @@
 Baseline for XML Parser [https://github.com/pharo-contributions/XML-XMLParser](https://github.com/pharo-contributions/XML-XMLParser)
 "
 Class {
-	#name : #BaselineOfXMLParser,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfXMLParser
+	#name : 'BaselineOfXMLParser',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfXMLParser',
+	#package : 'BaselineOfXMLParser'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfXMLParser >> baseline: spec [
 
 	<baseline>
@@ -23,7 +24,7 @@ BaselineOfXMLParser >> baseline: spec [
 				spec requires:
 						#( 'OrderPreservingDictionary' 'BitmapCharacterSet' ) ];
 			package: 'XML-Parser-Tests' with: [
-				spec requires: #( 'XML-Parser' 'OrderPreservingDictionary Tests'
+				spec requires: #( 'XML-Parser' 'BitmapCharacterSet' 'OrderPreservingDictionary Tests'
 						   'BitmapCharacterSet Tests' ) ];
 			package: 'XML-Parser-Tests-Conformance' with: [
 				spec requires:
@@ -50,7 +51,7 @@ BaselineOfXMLParser >> baseline: spec [
 			group: 'default' with: #( 'all' ) ]
 ]
 
-{ #category : #prerequisites }
+{ #category : 'prerequisites' }
 BaselineOfXMLParser >> bitmapCharacterSetOn: spec [
 			
 	spec
@@ -65,7 +66,7 @@ BaselineOfXMLParser >> bitmapCharacterSetOn: spec [
 			
 ]
 
-{ #category : #prerequisites }
+{ #category : 'prerequisites' }
 BaselineOfXMLParser >> orderPreservingDictionaryOn: spec [
 
 	spec
@@ -80,7 +81,7 @@ BaselineOfXMLParser >> orderPreservingDictionaryOn: spec [
 		project: 'OrderPreservingDictionary Tools' copyFrom: 'OrderPreservingDictionary' with: [ spec loads: #('Tools') ]
 ]
 
-{ #category : #prerequisites }
+{ #category : 'prerequisites' }
 BaselineOfXMLParser >> xmlWriterOn: spec [
 
 	spec
