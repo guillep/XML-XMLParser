@@ -89,7 +89,7 @@ BaselineOfXMLParser >> xmlWriterOn: spec [
       with: [ 
 			spec
 				loads: #('Core');
-				repository: 'github://pharo-contributions/XML-XMLWriter:v3.1.1/src' ]. 
+				repository: 'github://guillep/XML-XMLWriter:test/src' ]. 
 				
 	spec 
 		project: 'XMLWriter Tests' copyFrom: 'XMLWriter' with: [ spec loads: #('Tests') ]; 	
